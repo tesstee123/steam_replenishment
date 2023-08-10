@@ -1,8 +1,6 @@
 import streamlit as st
-from dotenv import load_dotenv,find_dotenv
-import os
 st.set_page_config(page_title="пополнение баланса стим")
-load_dotenv(find_dotenv())
+
 def main():
     st.title("Пополнение счета Steam")
     if st.text_input("логин стим"):
@@ -14,9 +12,9 @@ def main():
 
 
     if st.button("Пополнить счет"):
-        
+        # здесь вы можете добавить код для пополнения счета Steam
         #st.success(f"Счет {steam_username} успешно пополнен на {amount} рублей!")
-        st.markdown(f'<meta http-equiv="refresh" content="0;URL={(os.getenv("url"))}" />', unsafe_allow_html=True)
+        st.markdown('<meta http-equiv="refresh" content="0;URL=https://www.google.com" />', unsafe_allow_html=True)
         print(1)
 
 if __name__ == "__main__":
