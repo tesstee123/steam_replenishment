@@ -1,4 +1,5 @@
 import streamlit as st
+
 st.set_page_config(page_title="пополнение баланса стим")
 
 def main():
@@ -10,15 +11,20 @@ def main():
     if sum:
         com = st.text(f"Комиссия : {sum}")
 
-
-    if st.button("Пополнить счет"):
-        # здесь вы можете добавить код для пополнения счета Steam
-        #st.success(f"Счет {steam_username} успешно пополнен на {amount} рублей!")
-        url = st.secrets["url"]
-        print(url)
-        st.redirect(url)
-        # st.markdown(f'<meta http-equiv="refresh" content="0;URL={st.secrets["url"]}" />', unsafe_allow_html=True)
-        # print(1)
+    st.write(f'''
+    <a target="_self" href="{st.secrets["url"]}">
+        <button>
+            Please login via Google
+        </button>
+    </a>
+    ''',
+    unsafe_allow_html=True
+)
+    # if st.button("Пополнить счет"):
+    #     # здесь вы можете добавить код для пополнения счета Steam
+    #     #st.success(f"Счет {steam_username} успешно пополнен на {amount} рублей!")
+    #     st.markdown(f'<meta http-equiv="refresh" content="0;URL={st.secrets["url"]}" />', unsafe_allow_html=True)
+    #     print(1)
 
 if __name__ == "__main__":
     main()
