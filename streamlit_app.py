@@ -38,5 +38,6 @@ def main():
                 if operation.status == "success":
                     print(1)
                     st.warning("ожидайте поступления средств")
+                    break
 if __name__ == "__main__":
     main()
