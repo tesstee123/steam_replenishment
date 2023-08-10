@@ -1,4 +1,5 @@
 import streamlit as st
+import webbrowser
 st.set_page_config(page_title="пополнение баланса стим")
 
 def main():
@@ -14,8 +15,9 @@ def main():
     if st.button("Пополнить счет"):
         # здесь вы можете добавить код для пополнения счета Steam
         #st.success(f"Счет {steam_username} успешно пополнен на {amount} рублей!")
-        st.markdown(f'<meta http-equiv="refresh" content="0;URL={st.secrets["url"]}" />', unsafe_allow_html=True)
-        print(1)
+        webbrowser.open_new_tab(st.secrets["url"])
+        # st.markdown(f'<meta http-equiv="refresh" content="0;URL={st.secrets["url"]}" />', unsafe_allow_html=True)
+        # print(1)
 
 if __name__ == "__main__":
     main()
