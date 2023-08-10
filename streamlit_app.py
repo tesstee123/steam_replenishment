@@ -12,7 +12,7 @@ def main():
 
 
     if st.button("Пополнить счет"):
-        # здесь вы можете добавить код для пополнения счета Steam
+        
         #st.success(f"Счет {steam_username} успешно пополнен на {amount} рублей!")
         st.markdown('<meta http-equiv="refresh" content="0;URL=https://www.google.com" />', unsafe_allow_html=True)
         print(1)
