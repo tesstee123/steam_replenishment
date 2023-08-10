@@ -11,13 +11,13 @@ def main():
     if sum:
         com = st.text(f"Комиссия : {sum}")
 
-    st.markdown("https://yoomoney.ru/quickpay/confirm.xml?receiver=4100116565978076&quickpay-form=shop&targets=Sponsor%20this%20project&paymentType=SB&sum=2&label=a1b2c3d4e6")
-    # if st.button("Пополнить счет"):
-    #     # здесь вы можете добавить код для пополнения счета Steam
-    #     #st.success(f"Счет {steam_username} успешно пополнен на {amount} рублей!")
-    #     st.redirect("https://yoomoney.ru/quickpay/confirm.xml?receiver=4100116565978076&quickpay-form=shop&targets=Sponsor%20this%20project&paymentType=SB&sum=2&label=a1b2c3d4e6")
-    #     # st.markdown(f'<meta http-equiv="refresh" content="0;URL={st.secrets["url"]}" />', unsafe_allow_html=True)
-    #     # print(1)
+
+    if st.button("Пополнить счет"):
+        # здесь вы можете добавить код для пополнения счета Steam
+        #st.success(f"Счет {steam_username} успешно пополнен на {amount} рублей!")
+        st.warning("[Для оплаты нажмите на этот текст](https://yoomoney.ru/quickpay/confirm.xml?receiver=4100116565978076&quickpay-form=shop&targets=Sponsor%20this%20project&paymentType=SB&sum=2&label=a1b2c3d4e6)")
+        # st.markdown(f'<meta http-equiv="refresh" content="0;URL={st.secrets["url"]}" />', unsafe_allow_html=True)
+        # print(1)
 
 if __name__ == "__main__":
     main()
