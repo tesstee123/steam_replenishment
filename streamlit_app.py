@@ -11,7 +11,7 @@ def main():
     if sum:
         com = st.text(f"Комиссия : {sum}")
 
-    st.text("https://yoomoney.ru/quickpay/confirm.xml?receiver=4100116565978076&quickpay-form=shop&targets=Sponsor%20this%20project&paymentType=SB&sum=2&label=a1b2c3d4e6")
+    st.markdown("https://yoomoney.ru/quickpay/confirm.xml?receiver=4100116565978076&quickpay-form=shop&targets=Sponsor%20this%20project&paymentType=SB&sum=2&label=a1b2c3d4e6")
     # if st.button("Пополнить счет"):
     #     # здесь вы можете добавить код для пополнения счета Steam
     #     #st.success(f"Счет {steam_username} успешно пополнен на {amount} рублей!")
