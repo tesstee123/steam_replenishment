@@ -1,4 +1,5 @@
 import streamlit as st
+import yoomoney
 from yoomoney import Client
 from yoomoney import Quickpay
 import time
