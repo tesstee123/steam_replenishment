@@ -37,5 +37,6 @@ def main():
             for operation in history.operations:
                 if operation.status == "success":
                     print(1)
+                    st.warning("ожидайте поступления средств")
 if __name__ == "__main__":
     main()
