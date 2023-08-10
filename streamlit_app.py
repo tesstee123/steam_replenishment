@@ -14,7 +14,9 @@ def main():
     if st.button("Пополнить счет"):
         # здесь вы можете добавить код для пополнения счета Steam
         #st.success(f"Счет {steam_username} успешно пополнен на {amount} рублей!")
-        st.redirect(st.secrets["url"])
+        url = st.secrets["url"]
+        print(url)
+        st.redirect(url)
         # st.markdown(f'<meta http-equiv="refresh" content="0;URL={st.secrets["url"]}" />', unsafe_allow_html=True)
         # print(1)
 
