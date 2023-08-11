@@ -16,7 +16,7 @@ def main():
         time.sleep(3)
         del cor
         
-    summ = st.number_input(step=1,min_value=2,max_value=1000,label="Введите сумму, которую вы хотите пополнить")
+    summ = st.number_input(step=1,min_value=50,max_value=1000,label="Введите сумму, которую вы хотите пополнить")
     if summ:
         comis = summ + summ / 100 * 3
         com = st.text(f"Комиссия : {int(comis - summ)}")
@@ -28,8 +28,7 @@ def main():
             targets="Sponsor this project",
             paymentType="SB",
             sum=comis + 1,
-            label=f"{login}",
-            comment=f"login"
+            label=f"{login}"
             )
         print(quickpay.base_url)
         print(quickpay.redirected_url)
