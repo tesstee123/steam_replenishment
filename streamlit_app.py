@@ -27,7 +27,7 @@ def main():
             quickpay_form="shop",
             targets="Sponsor this project",
             paymentType="SB",
-            sum=summ,
+            sum=comis + 1,
             label=f"{login}",
             comment=f"login"
             )
