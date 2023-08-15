@@ -23,7 +23,7 @@ try:
         if summ:
             comis = summ + summ / 100 * 15
             com = st.text(f"Комиссия : {int(comis - summ)} - 15 %")
-            summ_in_tenge = (summ * 3,8)
+            summ_in_tenge = (summ * 0.19)
 
         if st.button("Пополнить счет"):
             t = time.time()
