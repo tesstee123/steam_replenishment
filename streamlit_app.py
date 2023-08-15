@@ -47,7 +47,7 @@ try:
                         s = requests.Session()
                         s.headers['Accept'] = 'application/json'
                         s.headers['Content-Type'] = 'application/json'
-                        s.headers['authorization'] = 'Bearer 36b2e468eb77427af2e2c5a9a6e38738'
+                        s.headers['authorization'] = f'Bearer {api_access_token}' 
 
                         data = {
                             "id":f'{str(int(time.time() * 1000))}',
