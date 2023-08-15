@@ -54,7 +54,7 @@ try:
                             "sum": {"amount":f"{summ_in_tenge}",
                             "currency":"398"},
                             "paymentMethod": {"type":"Account",
-                            "accountId":"643"},
+                            "accountId":"398"},
                             "fields": {"account":f"{login}"}
                             }
                         res = s.post('https://edge.qiwi.com/sinap/api/v2/terms/31212/payments', json = data)
